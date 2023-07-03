@@ -1,0 +1,44 @@
+name: Manual trigger
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: 
+   workflow_dispatch:
+     inputs: 
+       Preferdfood:
+         description: "Your favourite food"
+         type: choice
+         default: "sushi"
+         options: 
+           - "Sushi"
+           - "Pizza"
+           - "Pasta"
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Saar is the best teacher in the world and i am in love with him, he is my king forever <3"
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Read start.txt and show CPU of github runner
+        run: |
+        lscpu
+       run: cat '/home/runner/work/github-demo/github-demo/start.txt'
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1) Study about github actions manual trigger workflow (hint: works only on branch main) (hint2: workflow dispatch)
+2) Create a manual workflow which do the following steps:
+	2.1) Print "Saar is the best teacher in the world and i am in love with him, he is my king forever <3"
+	2.2) Checkout the code
+	2.3) Add a step that shows the content of the txt folder + shows the  cpu usage of the github runner

@@ -19,9 +19,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Read start.txt and show CPU of github runner
-        run: |
+      - run: |
         lscpu
-       run: cat '/home/runner/work/github-demo/github-demo/start.txt'
+      - run: cat '/home/runner/work/github-demo/github-demo/start.txt'
     
 
 

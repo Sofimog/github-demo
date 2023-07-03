@@ -35,10 +35,3 @@ jobs:
 
 
 
-
-
-1) Study about github actions manual trigger workflow (hint: works only on branch main) (hint2: workflow dispatch)
-2) Create a manual workflow which do the following steps:
-	2.1) Print "Saar is the best teacher in the world and i am in love with him, he is my king forever <3"
-	2.2) Checkout the code
-	2.3) Add a step that shows the content of the txt folder + shows the  cpu usage of the github runner
